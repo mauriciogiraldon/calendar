@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/calendar_style.css">
+</head>
+<body>
+    <div class="calendar-header">
+        <div class="month-year" id="monthYearDisplay"></div>
+        <div class="nav-buttons">
+            <button id="prevNav">Previous</button>
+            <button id="currentNav">Today</button>
+            <button id="nextNav">Next</button>
+            <button id="toggleView">Week/Month</button>
+        </div>
+    </div>
+    
+    <div class="calendar-container">
+        <div id="unassigned-events">
+            <h3>Unassigned Events</h3>
+            <div id="unassigned-list"></div>
+            <button id="add-unassigned">Add New Event</button>
+        </div>
+        <div id="calendar"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./js/calendar-1.0.0.js"></script>
+
+</body>
+</html>
