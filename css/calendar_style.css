@@ -5,6 +5,10 @@ body {
 
 .calendar-container {
     display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Prevent horizontal scroll */
 }
 
 .calendar-header {
@@ -42,15 +46,16 @@ body {
     min-height: 400px;
     background: #f5f5f5;
     padding: 10px;
-    margin-right: 20px;
     border-radius: 5px;
+    flex-shrink: 0;
 }
 
 #calendar {
-    flex-grow: 1;
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
+    min-width: 0;
 }
 
 .day {
